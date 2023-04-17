@@ -5,6 +5,13 @@ So in case you haven't used Git before, this is our team repository. You can do 
 Data:
 The current datasets are located in the data folder. We need to be find some more retinal images so if you find any available datasets you can add them in this folder.
 
+Diabetic Samples:
+26_training: background diabetic retinopathy, pigmentary epithelial atrophy, atrophy around optic disk
+32_training: background diabetic retinopathy
+03_test: background diabetic retinopathy
+14_test: background diabetic retinopathy
+17_test: background diabetic retinopathy
+
 src:
 So standard practice is to have your various code files stored in the src (stands for source) folder.
 
