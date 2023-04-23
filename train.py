@@ -108,7 +108,7 @@ if __name__ == "__main__":
         ReduceLROnPlateau(monitor="val_loss", factor=0.1, patience=5, min_lr=1e-6, verbose=1),
         CSVLogger(csv_path),
         TensorBoard(),
-        EarlyStopping(monitor="val_loss", patience=10, restore_best_weights=False)
+        
     ]
 
     model.fit(
