@@ -68,19 +68,24 @@ model.summary()
 model.compile(optimizer=Adam(learning_rate=0.001),loss='sparse_categorical_crossentropy',metrics=['accuracy'])
 
 #%%
+csv_logger = tf.keras.callbacks.CSVLogger('training.log')
+early_stop = tf.keras.callbacks.EarlyStopping(monitor = 'val_loss', patience = 6)
+#%%
 epochs=500
 
 history = model.fit(
   train_ds,
   validation_data=val_ds,
-  epochs=epochs
+  epochs=epochs,
+  callbacks = [csv_logger, early_stop]
 )
 
 
 
-#%%
-
 model.save('keras_model')
+
+
+
 #%% DO NOT RUN
 
 fig1 = plt.gcf()
