@@ -1,0 +1,3 @@
+,Accuracy,Balanced Accuracy,Precision,Recall,f1 Score
+Segmented Trained,0.578651685,0.621904762,0.026315789,0.666666667,0.050632911
+Normal Trained,0.58988764,0.3,0,0,0

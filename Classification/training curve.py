@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #%% load training log
-df = pd.read_csv('training.log')
+df = pd.read_csv('comparison training.log')
 
 #%% plot curves
 
